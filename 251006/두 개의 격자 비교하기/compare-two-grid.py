@@ -1,7 +1,7 @@
 a,b = map(int,input().split())
 
-lf=[list(map(int,input().split())) for _ in range(b)]
-ls=[list(map(int,input().split())) for _ in range(b)]
+lf=[list(map(int,input().split())) for _ in range(a)]
+ls=[list(map(int,input().split())) for _ in range(a)]
 
 for i in range(a):
     for j in range(b):
