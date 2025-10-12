@@ -1,2 +1,2 @@
 a=float(input())
-print("{0:.2f}".format(a))
+print(f"{a:.2f}")
