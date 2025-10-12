@@ -1,3 +1,4 @@
-a,b=map(str,input().split())
+a=input()
+b=input()
 
 print(b,a,sep="\n")
