@@ -1,4 +1,2 @@
 a,b= map(int,input().split())
-a+=8
-b*=3
-print(a,b,a*b,sep="\n")
+print(a+8,b*3,(a+8)*(b*3),sep="\n")
