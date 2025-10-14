@@ -3,7 +3,7 @@ b=int(input())
 
 if a==1:
     if b>=19:
-        print("MAN"
+        print("MAN")
     else:
         print("BOY")
 else:
