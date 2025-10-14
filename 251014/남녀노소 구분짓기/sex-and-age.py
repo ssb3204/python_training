@@ -1,7 +1,7 @@
 a=int(input())
 b=int(input())
 
-if a==1:
+if a==0:
     if b>=19:
         print("MAN")
     else:
