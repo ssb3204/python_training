@@ -1,2 +1,4 @@
+import math
 a,b=map(int,input().split())
-print(f"{a/b:.20f}")
+d= a/b
+print("{2}".format(d))
