@@ -5,4 +5,4 @@ for _ in range(a):
     if b%2!=0 and b%3==0:
         sum+=b
 
-print(xum)
+print(sum)
