@@ -7,6 +7,6 @@ while(1):
     a=a/i
     cnt+=1
     if a<=1:
-        print(cnt)
+        print(cnt-1)
         break
     i+=1
