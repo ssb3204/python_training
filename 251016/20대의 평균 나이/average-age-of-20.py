@@ -2,7 +2,7 @@ sum=0
 cnt=0
 while(1):   
     a=int(input())
-    if a>=30:
+    if a>=30 or a<=19:
         print(f"{sum/cnt:.2f}")
         break
     cnt+=1
