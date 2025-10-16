@@ -1,10 +1,12 @@
 a=int(input())
 
 
-cnt=1
+cnt=0
+i=1
 while(1):
-    a=a/cnt
+    a=a/i
+    cnt+=1
     if a<=1:
         print(cnt)
         break
-    cnt+=1
+    i+=1
