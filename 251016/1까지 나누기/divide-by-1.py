@@ -4,10 +4,10 @@ a=int(input())
 cnt=0
 i=1
 while(1):
-    if a<=1:
-        print(cnt)
-        break
     a=a/i
     cnt+=1
-    
+    if 1>=a:
+        print(cnt)
+        break
     i+=1
+    print(i,cnt,sep=" ")
