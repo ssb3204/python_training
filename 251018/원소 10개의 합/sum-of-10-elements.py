@@ -1,6 +1,6 @@
-a=list(input().split())
+a=list(map(int,input().split()))
 sum=0
 for i in a:
-    sum+=int(i)
+    sum+=i
 
 print(sum)
