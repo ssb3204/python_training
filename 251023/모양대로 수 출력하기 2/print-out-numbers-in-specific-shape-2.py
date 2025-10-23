@@ -1,9 +1,9 @@
 a=int(input())
-cnt=1
+cnt=2
 for i in range(a):
     for j in range(a):
-        if cnt>=a:
-            cnt=1
-        print(cnt*2,end=" ")
-        cnt+=1
+        if cnt>=10:
+            cnt=2
+        print(cnt,end=" ")
+        cnt+=2
     print()
