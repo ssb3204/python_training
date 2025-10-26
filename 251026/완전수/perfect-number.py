@@ -9,6 +9,5 @@ for i in range(start,end+1):
             sum+=j
     if sum==i:
         cnt+=1
-
 print(cnt)
         
