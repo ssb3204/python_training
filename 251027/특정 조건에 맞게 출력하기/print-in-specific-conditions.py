@@ -6,3 +6,5 @@ for i in ls:
             print(i+3,end=" ")
         else:
             print(i//2,end=" ")
+    else:
+        break
