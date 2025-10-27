@@ -8,4 +8,4 @@ for i in ls:
         sum+=i
         cnt+=1
 
-print(f"{sum} {sum/cnt}")
+print(f"{sum} {sum/cnt:.1f}")
