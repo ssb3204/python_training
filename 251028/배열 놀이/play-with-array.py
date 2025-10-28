@@ -2,10 +2,8 @@ a,b=map(int,input().split())
 
 ls= list(map(int,input().split()))
 
-for _ in range(a):
+for _ in range(b):
     q=list(map(int,input().split()))
-    if len(q)==0:
-        break
     if q[0]==1:
         print(ls[q[1]-1])
     elif q[0]==2:
