@@ -3,8 +3,8 @@ ls=[0]*b
 while(True):
     if a<=1:
         break
+    ls[a%b]+=1
     a=a//b
-    ls[(a%b)-1]+=1
 
 sum=0
 for i in ls:
