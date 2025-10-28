@@ -13,6 +13,8 @@ for i in range(3):
 
 if ls[0]>=2:
     ls[4]="E"
+else:
+    ls[4]=0
 
 for i in ls:
     print(i,end=" ")
