@@ -1,4 +1,4 @@
-ls=[0]*5
+ls=[0]*4
 
 for i in range(3):
     a,b=map(str,input().split())
@@ -12,9 +12,8 @@ for i in range(3):
         ls[3]+=1
 
 if ls[0]>=2:
-    ls[4]="E"
-else:
-    ls[4]=0
+    ls.append("E")
+
 
 for i in ls:
     print(i,end=" ")
