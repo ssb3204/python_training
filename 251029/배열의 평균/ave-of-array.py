@@ -17,4 +17,4 @@ for i in a:
     print(f"{i/2:.1f}",end=" ")
     num+=i
 print()
-print(f"{num/2:.1f}")
+print(f"{num/8:.1f}")
