@@ -14,4 +14,7 @@ for _ in range(x):
 for i,j in zip(a,b):
     for f,s in zip(i,j):
         if f==s:
-            print(0.end=" ")
+            print(0,end=" ")
+        else:
+            print(1,end=" ")
+    print()
