@@ -1,4 +1,7 @@
 a=input()
 b=int(input())
 
-print(a[len(a):len(a)-b-1:-1])
+if b>len(a):
+    print(a[::-1])
+else:
+    print(a[len(a):len(a)-b-1:-1])
