@@ -7,7 +7,7 @@ while(i<len(A)):
     cnt=1
     j=i+1
     for k in range(i+1,len(A)):
-        if A[i]==A[k] and k<len(A):
+        if A[i]==A[k]:
             cnt+=1
             j+=1
         else:
