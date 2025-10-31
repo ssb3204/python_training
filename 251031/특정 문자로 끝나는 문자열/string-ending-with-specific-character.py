@@ -9,5 +9,5 @@ for i in ls:
     if i.endswith(a):
         is_t=True
 
-if !is_t:
+if is_t!:
     print("None")
