@@ -9,7 +9,5 @@ while(True):
         cnt+=1
     
 print(cnt)
-
-if len(ls)!=0:
-    for i in range(0,len(ls),2):
-        print(ls[i])
+for i in range(0,len(ls),2):
+    print(ls[i])
