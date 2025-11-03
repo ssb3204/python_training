@@ -11,8 +11,8 @@ def three(a,b):
 def tes(a,b):
     cnt=0
     for i in range(a,b+1):
-        if str(i).contains("3"):
-            cnt+=str(i).count("3")
+        if "3" in str(i):
+            cnt+=1
     return cnt
 
 print(three(a,b)+tes(a,b))
