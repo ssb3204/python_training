@@ -8,10 +8,15 @@ def f(a,b):
         for i in range(len(a)-len(b)):
             if a[i:i+len(b)]==b:
                 return True
-    else:
+    elif n2>n1:
         for i in range(len(b)-len(a)):
             if a[i:i+len(a)]==a:
                 return True
+    else:
+        if a==b:
+            return True
+        else:
+            return False
 
 print("Yes" if f(a,b) else "No")
 
