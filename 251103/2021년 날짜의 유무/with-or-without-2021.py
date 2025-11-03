@@ -12,10 +12,12 @@ def f(a,b):
             return True
         else:
             return False
-    else:
+    elif a in [2,4,6,9,11]:
         if b<=30:
             return True
         else:
             return False
+    else:
+        return False
 
 print("Yes" if f(M,D) else "No")
