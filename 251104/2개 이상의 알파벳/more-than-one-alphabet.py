@@ -6,11 +6,8 @@ def f(a):
     for i in range(len(a)-2):
         for j in range(i+1,len(a)):
             if a[i]!=a[j]:
-                is_t=True
-    if is_t:
-        return True
-    else:
-        return False
+                return True
+    return False
 
 print("Yes" if f(A) else "No")
 
