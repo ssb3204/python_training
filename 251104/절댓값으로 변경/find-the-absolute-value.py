@@ -8,8 +8,7 @@ def f(a):
         if i<0:
             print(i*-1,end=" ")
         else:
-            print(i,end=" 
-            ")
+            print(i,end=" ")
 
 
 f(arr)
