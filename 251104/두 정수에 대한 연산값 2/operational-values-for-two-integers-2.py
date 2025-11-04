@@ -6,7 +6,7 @@ def f(a,b):
     if a>b:
         b+=10
         a*=2
-        return b,a
+        return a,b
     else:
         a+=10
         b*=2
