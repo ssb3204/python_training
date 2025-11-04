@@ -5,8 +5,7 @@ a, b = map(int, input().split())
 def f(a,b):
     mi=min(a,b)+10
     ma=max(a,b)*2
-    return mi,ma
+    print(mi,ma,sep=" ")
 
 
-a,b=f(a,b)
-print(a,b,sep=" ")
+f(a,b)
