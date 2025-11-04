@@ -2,12 +2,15 @@ A = input()
 
 # Please write your code here.
 def f(a):
-    for i in range(1,len(a)+1):
-        for j in range(len(a)-i):
+    is_t=False
+    for i in range(len(a)-2):
+        for j in range(i+1,len(a)):
             if a[i]!=a[j]:
-                return True
-            else:
-                return False
+                is_t=True
+    if is_t:
+        return True
+    else:
+        return False
 
 print("Yes" if f(A) else "No")
 
