@@ -10,5 +10,5 @@ class Std:
 C=Std()
 print(f"user {C.id} lv {C.lev}")
 
-C=Std(id="hello",lev=28)
+C=Std(id=user2_id,lev=user2_level)
 print(f"user {C.id} lv {C.lev}")
