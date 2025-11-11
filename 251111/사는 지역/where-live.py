@@ -21,7 +21,7 @@ ls=[]
 for i in range(n):
     ls.append(std(name[i],street_address[i],region[i]))
 
-ls.sort(key=lambda x:name)
+ls.sort(key=lambda x:x.name)
 
 print(f"name {ls[n-1].name}")
 print(f"addr {ls[n-1].street}")
