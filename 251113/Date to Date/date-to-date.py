@@ -12,5 +12,7 @@ for i in range(m2+1):
     f+=dom[i]
 f+=d2
 
-
-print(f-s)
+if f==s:
+    print(1)
+else:
+    print(f-s)
