@@ -10,4 +10,14 @@ for i in ls[::-1]:
 
 sum*=17
 
-print(bin(sum)[2:])
+num=[]
+
+while True:
+    if sum<2:
+        num.append(sum)
+        break
+    num.append(sum%2)
+    sum//=2
+
+for i in num[::-1]:
+    print(i,end="")
