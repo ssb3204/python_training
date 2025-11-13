@@ -10,9 +10,8 @@ if m1!=m2:
         sum+=dom[i]
 else:
     if d2!=d1:
-        sum+=d2-d1
+        sum+=d2-d1+1
     else:
         sum+=1
-
 
 print(sum)
