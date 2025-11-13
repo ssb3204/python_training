@@ -6,8 +6,8 @@ ls = list(input())
 sum=0
 n=0
 for i in ls[::-1]:
-    if i=="1":
-        sum+=a**n
+    if i!="0":
+        sum+=int(i)*(a**n)
     n+=1
 
 num=[]
