@@ -12,11 +12,8 @@ for i in segments:
 ls=[0 for _ in range(max)]
 
 for i in segments:
-    for j in range(i[0],i[1]):
+    for j in range(i[0],i[1]+1):
         ls[j-1]+=1
-cnt=0
-for i in ls:
-    if i>=2:
-        cnt+=1
+ls.sort()
 
-print(cnt)
+print(ls[len(ls)-1])
