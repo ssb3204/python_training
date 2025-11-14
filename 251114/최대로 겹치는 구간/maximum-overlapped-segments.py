@@ -14,7 +14,10 @@ for i in segments:
     if i[1]>=0 and i[1]>max:
         max=i[1]
 
-ls=[0 for _ in range(max+1)]
+if min<0:
+    ls=[0 for _ in range(max+abs(min))]
+else:
+    ls=[0 for _ in range(max)]
 
 for i in segments:
     if min<0:
