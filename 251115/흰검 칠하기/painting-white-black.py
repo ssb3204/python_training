@@ -1,5 +1,13 @@
 n = int(input())
-commands = [tuple(input().split()) for _ in range(n)]
+commands = []
+
+for _ in range(n):
+    a=input().split()
+    if not a:
+        break
+    if len(a)!=2:
+        break
+    commands.append(tuple(a))
 x = []
 dir = []
 for num, direction in commands:
@@ -7,7 +15,7 @@ for num, direction in commands:
     dir.append(direction)
 
 # Please write your code here.
-MAX=10000
+MAX=200050
 ls=[[0, "none"] for _ in range(MAX)]
 
 now=MAX//2
@@ -20,7 +28,7 @@ for i in range(n):
             ls[j][0]+=1
             ls[j][1]="black"
         now+=a-1
-    else:
+    elif b=="L":
         for j in range(now,now-a,-1):
             ls[j][0]+=1
             ls[j][1]="white"
@@ -29,7 +37,7 @@ for i in range(n):
         
 b,w,g=0,0,0
 for i in ls:
-    if i[0]==0:
+    if i[1]=="none" or i[0]==0:
         continue
     if i[0]>=4:
         g+=1
