@@ -2,7 +2,7 @@ n = int(input())
 arr = [int(input()) for _ in range(n)]
 
 # Please write your code here.
-ls=[]
+ls=[0]
 sum=1
 num=0
 for i in range(n-2):
