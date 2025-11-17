@@ -11,6 +11,6 @@ for i in range(n-2):
     else:
         ls.append(num)
         num=0
-ls.sort()
-print(sum+ls[len(ls)-1])
+ls.sort(reverse=True)
+print(sum+ls[0])
         
