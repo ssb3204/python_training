@@ -8,12 +8,12 @@ for _ in range(n):
     y2.append(d)
 
 # Please write your code here.
-ls=[[0 for _ in range(10)]for _ in range(10)]
+ls=[[0 for _ in range(200)]for _ in range(200)]
 
 for i in range(n):
     for j in range(x1[i],x2[i]):
         for k in range(y1[i],y2[i]):
-            ls[j][k]=1
+            ls[j+100][k+100]=1
 sum=0
 for i in ls:
     for j in i:
