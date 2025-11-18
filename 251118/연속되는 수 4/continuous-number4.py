@@ -10,7 +10,8 @@ for i in range(n-1):
     else:
         sum=1
     num=max(sum,num)
-if len(arr)==0:
+    
+if len(arr)==1:
     print(0)
 else:
     print(num)
