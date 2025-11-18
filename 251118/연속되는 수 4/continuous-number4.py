@@ -10,5 +10,7 @@ for i in range(n-1):
     else:
         sum=1
     num=max(sum,num)
-
-print(num)
+if len(arr)==0:
+    print(0)
+else:
+    print(num)
