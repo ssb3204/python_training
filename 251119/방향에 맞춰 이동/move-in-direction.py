@@ -12,7 +12,7 @@ for i in range(n):
         x+=dist[i]
     elif dir[i]=="S":
         y-=dist[i]
-    elif dir[i]=="w":
+    elif dir[i]=="W":
         x-=dist[i]
 
 print(x,y,sep=" ")
