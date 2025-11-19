@@ -1,7 +1,7 @@
 n, m = map(int, input().split())
 
-ls1=[0 for _ in range(20)]
-ls2=[0 for _ in range(20)]
+ls1=[0 for _ in range(1000001)]
+ls2=[0 for _ in range(1000001)]
 # Process A's movements
 
 now=1
