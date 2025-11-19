@@ -5,9 +5,9 @@ d=0
 # Please write your code here.
 for i in range(len(dirs)):
     if dirs[i]=="L":
-        d-=1
+        d=(d-1)%4
     elif dirs[i]=="R":
-        d+=1
+        d=(d+1)%4
     elif dirs[i]=="F":
         x,y= x+dx[d],y+dy[d]
         
