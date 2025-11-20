@@ -13,9 +13,9 @@ for i in commands:
     if i=="F":
         x,y=x+dx[d],y+dy[d]
     elif i=="R":
-        d+=1
+        d=(d+1)%4
     elif i=="L":
-        d-=1
+        d=(d-1)%4
     cnt+=1
     if x==0 and y==0:
         is_t=True
