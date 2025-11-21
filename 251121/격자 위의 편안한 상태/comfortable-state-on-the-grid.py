@@ -25,7 +25,7 @@ def check(x,y):
 
 for i in range(m):
     x,y=map(int,input().split())
-    ls[x-1][y-1]+=1
+    ls[x-1][y-1]=1
     if check(x-1,y-1):
         print(1)
     else:
