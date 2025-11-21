@@ -22,6 +22,7 @@ for i in range(2,m*n+1):
 
 for i in arr:
     for j in i:
-        print(chr(ord('A') + (j % 26)-1),end=" ")
+        print(chr(ord('A') + ((j - 1) % 26)),end=" ")
+        
     print()
     
