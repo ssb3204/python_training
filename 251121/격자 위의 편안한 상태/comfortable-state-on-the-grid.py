@@ -3,7 +3,7 @@ ls =[[0 for _ in range(n)] for _ in range(n)]
 
 # Please write your code here.
 def in_dex(x,y):
-    return 1<=x and x<n-1 and 1<=y and y<n-1
+    return 1<=x and x<=n-2 and 1<=y and y<=n-2
 
 
 def check(x,y):
@@ -25,8 +25,10 @@ def check(x,y):
 
 for i in range(m):
     x,y=map(int,input().split())
-    ls[x-1][y-1]=1
-    if check(x-1,y-1):
+    x=x-1
+    y=y-1
+    ls[x][y]=1
+    if check(x,y):
         print(1)
     else:
         print(0)
