@@ -1,0 +1,32 @@
+n, m = map(int, input().split())
+ls =[[0 for _ in range(n)] for _ in range(n)]
+
+# Please write your code here.
+def in_dex(x,y):
+    return 0<=x and x<n-1 and 0<=y and y<n-1
+
+
+def check(x,y):
+    cnt=0
+    if in_dex(x,y):
+        if ls[x+1][y]==1:
+            cnt+=1
+        if ls[x][y+1]==1:
+            cnt+=1
+        if ls[x-1][y]==1:
+            cnt+=1
+        if ls[x][y-1]==1:
+            cnt+=1
+        if cnt==3:
+            return 1
+        else:
+            return False
+
+
+for i in range(m):
+    x,y=map(int,input().split())
+    ls[x-1][y-1]+=1
+    if check(x-1,y-1):
+        print(1)
+    else:
+        print(0)
