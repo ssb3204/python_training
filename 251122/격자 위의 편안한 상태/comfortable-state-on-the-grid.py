@@ -25,8 +25,8 @@ def check(x,y):
             return 1
         else:
             return False
-    elif ze(x,y):
-        if x==0:
+    else:
+        if x==0 and y!=0:
             if ls[x-1][y]==1:
                 cnt+=1
             if ls[x][y+1]==1:
@@ -37,7 +37,7 @@ def check(x,y):
                 return 1
             else:
                 return 0
-        elif y==0:
+        elif y==0 and x!=0:
             if ls[x+1][y]==1:
                 cnt+=1
             if ls[x][y+1]==1:
@@ -48,7 +48,7 @@ def check(x,y):
                 return 1
             else:
                 return 0
-        elif y==n-1:
+        elif y==n-1 and x!=n-1:
             if ls[x-1][y]==1:
                 cnt+=1
             if ls[x][y+1]==1:
@@ -59,7 +59,7 @@ def check(x,y):
                 return 1
             else:
                 return 0
-        elif x==n-1:
+        elif x==n-1 and (y!=0 and y!=n-1):
             if ls[x-1][y]==1:
                 cnt+=1
             if ls[x][y-1]==1:
