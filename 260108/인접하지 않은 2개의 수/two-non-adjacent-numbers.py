@@ -5,7 +5,7 @@ max=0
 for i in range(n):
     sum=0
     if i==0:
-        for j in range(i+1,n):
+        for j in range(i+2,n):
             sum=numbers[i]+numbers[j]
             if max<sum:
                 max=sum
