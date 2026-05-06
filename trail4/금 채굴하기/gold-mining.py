@@ -9,7 +9,7 @@ def in_range(a,b):
 
 for i in range(n):
     for j in range(n):
-        for k in range(2*n):
+        for k in range(2*n-1):
             cost=k*k+(k+1)*(k+1)
             if cost>n*n*m:
                 break
