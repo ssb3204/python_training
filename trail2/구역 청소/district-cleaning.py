@@ -8,11 +8,10 @@ cnt=0
 for i in range(a,b):
     if ls[i]==False:
         ls[i]=True
+        cnt+=1
 for j in range(c,d):
     if ls[j]==False:
         ls[j]=True
-for k in ls:
-    if k:
         cnt+=1
 
 print(cnt)
